@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+    <main>
+        <div id="product-list">
+            <section class="contenedor">
+                <div class="card">
+                  <div class="imgBx">
+                      <img src="https://i.ebayimg.com/images/g/71oAAOSwfU1kqa7z/s-l500.jpg" alt="">
+                  </div>
+                  <div class="details">
+                      <h3>jordan</h3>
+                      <p>Nike Air Jordan 1 High OG UNC University</p>
+                      <h4>Tenemos</h4>
+                      <ul class="size">
+                          <li>colores</li>
+                          <li>tallas</li>
+                          <li>import</li>
+                      </ul>
+                      <button class="btn-agg" onclick="addToCart('Producto 1', 347.00)">Agregar al Carrito</button>
+                  </div>
+                </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://res.cloudinary.com/brokenchains/image/upload/v1684026753/DM0967-148-AIR-JORDAN-3-BC-01.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>jordan</h3>
+                    <p>Air Jordan 3 Retro 'Wizards' G/S</p>
+                    <h4>Tenemos</h4>
+                    <ul class="size">
+                        <li>colores</li>
+                        <li>tallas</li>
+                        <li>import</li>
+                    </ul>
+                    <button class="btn-agg" onclick="addToCart('Producto 2', 120.00)">Agregar al Carrito</button>
+                </div>
+              </div>
+            <div class="card">
+                <div class="imgBx">
+                    <img src="https://umomag.com/wp-content/uploads/2020/07/air-jordan-4-x-off-white-01-umomag.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3>jordan</h3>
+                    <p>Air Jordan 4 x Off-White</p>
+                    <h4>Tenemos</h4>
+                    <ul class="size">
+                        <li>colores</li>
+                        <li>tallas</li>
+                        <li>import</li>
+                    </ul>
+                    <button class="btn-agg" onclick="addToCart('Producto 3', 2.953)">Agregar al Carrito</button>
+                </div>
+              </div>
+            <!-- Agrega más productos aquí -->
+        </div>
+        <div id="cart">
+            <h2>Carrito</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: $<span id="total">0.00</span></p>
+            <button onclick="clearCart()">Vaciar Carrito</button>
+        </div>
+    </main>
+    <script src="scrip.js"></script>
+</body>
+</html>
